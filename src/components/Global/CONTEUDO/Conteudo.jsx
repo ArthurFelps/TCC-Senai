@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import "./global.css";
+
+import "../CONTEUDO/Conteudo.css"
 
 function Conteudo(){
     return(
@@ -17,7 +18,7 @@ function Conteudo(){
 
                         <div className="container-icone-botão1">
 
-                            <img className="icones-botão" src="./imagens/Suplemento.png" alt="" />
+                            <img className="icones-botão" src="../../imagens/Suplemento.png" alt="" />
 
                                 <strong>SUPLEMENTOS</strong>
 
@@ -34,7 +35,7 @@ function Conteudo(){
 
                             <div className="container-icone-botão">
 
-                                <img className="icones-botão" src="./imagens/cabide.png" alt="" />
+                                <img className="icones-botão" src="../../imagens/cabide.png" alt="" />
                                 <strong>ROUPAS</strong>
 
                             </div>
@@ -50,7 +51,7 @@ function Conteudo(){
 
                         <div className="container-icone-botão">
 
-                            <img className="icones-botão" src="./imagens/Peso.png" alt="" />
+                            <img className="icones-botão" src="../../imagens/Peso.png" alt="" />
                             
                                 <strong>MARCAS</strong>
 
@@ -66,7 +67,7 @@ function Conteudo(){
 
                         <div className="container-icone-botão">
 
-                            <img className="icones-botão" src="./imagens/fogo.png" alt="" />
+                            <img className="icones-botão" src="../../imagens/fogo.png" alt="" />
                             
                                 <strong>TOP 12</strong>
 
@@ -82,7 +83,7 @@ function Conteudo(){
 
                         <div className="container-icone-botão2">
 
-                            <img className="icones-botão" src="./imagens/Whey2.png" alt="" />
+                            <img className="icones-botão" src="../../imagens/Whey2.png" alt="" />
                             
                                 <strong>WHEYS</strong>
 

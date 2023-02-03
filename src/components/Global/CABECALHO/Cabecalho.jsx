@@ -1,6 +1,7 @@
 import { ExternalLink } from 'react-external-link';
 import { Link } from "react-router-dom";
-import "./global.css";
+
+import "./Cabecalho.css"
 
 function Cabecalho(){
 

@@ -39,7 +39,7 @@ function Rodape(){
 
         </fotter>
         <div className="fotter">
-        <h2>OVERBODY</h2>
+        <h1 classname="OVERBODY1" >OVER</h1><h1 className="OVERBODY2" >BODY</h1>
         <div className="sociais">
             <div className="social">
                 <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>

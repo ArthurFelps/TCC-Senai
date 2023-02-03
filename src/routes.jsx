@@ -1,8 +1,8 @@
 import { Routes, Route, Link } from "react-router-dom";
 import App from "./App";
+
 import Suplementos from "./components/Global/Suplementos";
 import Roupas from "./components/Global/Roupas";
-
 import Marcas from "./components/Global/Marcas";
 import Top12 from "./components/Global/Top12";
 import Whey from "./components/Global/Whey";

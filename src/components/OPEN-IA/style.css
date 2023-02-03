@@ -14,19 +14,7 @@ body {
 
 
 
-.CABECALHO {
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px;
-  background-color: #011f24;
-  height: 30px;
-  width: 60px;
-  box-shadow:  0px 5px 16px rgba(0, 0, 0, 0.8);
-  
-  }
 
 .Icone-nav{
   height: 60px;
@@ -188,7 +176,6 @@ body {
 }
 .container .container-form .btn {
   position: relative;
-  box-shadow: 0 0 10px 1px #ff73b3;
   margin-top: 30px;
 }
 .container .form-item {
@@ -246,8 +233,8 @@ body {
 .container.active .container-form:before {
   content: "✔";
   position: absolute;
-  left: 51px;
-  top: 5px;
+  left: 70px;
+  top: 10px;
   color: #5356ad;
   font-size: 130px;
   opacity: 1;

@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom";
-import Cabecalho from './components/Global/Cabecalho';
-import Conteudo from './components/Global/Conteudo';
-import Pesquisa from './components/Global/Pesquisa';
-import Rodape from './components/Global/Rodape';
+import Cabecalho from './components/Global/CABECALHO/Cabecalho';
+import Conteudo from './components/Global/CONTEUDO/Conteudo';
+import Pesquisa from './components/Global/PESQUISA/Pesquisa';
+import Rodape from './components/Global/RODAPE/Rodape';
 
 import { MainRoutes } from './routes'
 

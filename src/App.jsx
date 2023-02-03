@@ -1,6 +1,6 @@
-import Cabecalho from "./components/Global/Cabecalho";
-import Pesquisa from "./components/Global/Pesquisa";
-import Conteudo from "./components/Global/Conteudo";
+import Cabecalho from "./components/Global/CABECALHO/Cabecalho";
+import Pesquisa from "./components/Global/PESQUISA/Pesquisa";
+import Conteudo from "./components/Global/CONTEUDO/Conteudo";
 import { BrowserRouter } from "react-router-dom";
 
 
