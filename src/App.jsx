@@ -2,32 +2,53 @@ import Cabecalho from "./components/Global/CABECALHO/Cabecalho";
 import Pesquisa from "./components/Global/PESQUISA/Pesquisa";
 import Conteudo from "./components/Global/CONTEUDO/Conteudo";
 import { BrowserRouter } from "react-router-dom";
+import SwiperCore, { Autoplay, EffectCoverflow, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
 
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination]);
 
+    const slide_img = [
+      "./imagens/slide1.webp",
+      "./imagens/slide2.webp",
+      "./imagens/slide3.webp",
+ 
+    ];
+    
+    const App = () => {
+      return (
+        <div className="main-swiper">
+          <Swiper
+            effect={"coverflow"}
+            autoplay={{
+              delay: 10000,
+              disableOnInteraction: false,
+            }}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            pagination={true}
+            className="mySwiper"
+          >
+            {/* using array */}
+            {slide_img.map((img, i) => {
+              return (
+                <SwiperSlide key={i}>
+                  <img src={img} alt="" />
+                </SwiperSlide>
+              );
+            })}
 
-function App() {
-  return (
-    <section>
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous"></link>
-
-       <div className="swiffy-slider">
-              <ul className="slider-container">
-                  <li><img src="./imagens/slide1.webp" style={{width:"100%", height:"500px"}}/></li>
-                  <li><img src="./imagens/slide2.webp" style={{width:"100%", height:"500px"}}/></li>
-                  <li><img src="./imagens/slide3.webp" style={{width:"100%", height:"500px"}}/></li>
-              </ul>
-          
-              <button type="button" className="slider-nav"></button>
-              <button type="button" className="slider-nav slider-nav-next"></button>
-          
-              <div className="slider-indicators">
-                  <button className="active"></button>
-                  <button className="active"></button>
-                  <button className="active"></button>
-              </div>
-          </div>
- </section>
+          </Swiper>
+        </div>
    
           
   )

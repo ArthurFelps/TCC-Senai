@@ -11,10 +11,17 @@
     text-decoration: none;
 }
 
+.slider-container{
+
+width: 100%;
+height: 200px;
+
+}
+
 body{
 
     font-size: 100%;
-    background-color: #012d35;
+    background-color: #022b2b;
     overflow-x: hidden;
     overflow-y: auto;
 }
