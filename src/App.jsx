@@ -22,7 +22,7 @@ SwiperCore.use([EffectCoverflow, Autoplay, Pagination]);
           <Swiper
             effect={"coverflow"}
             autoplay={{
-              delay: 10000,
+              delay: 10000  ,
               disableOnInteraction: false,
             }}
             grabCursor={true}
