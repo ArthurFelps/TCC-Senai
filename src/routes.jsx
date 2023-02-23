@@ -8,6 +8,7 @@ import Top12 from "./components/Global/Top12";
 import Whey from "./components/Global/Whey";
 import Cwhey from "./components/Global/Cwhey";
 import Croupa from "./components/Global/Croupa";
+import CADitens from "./components/Global/CADItens/CADitens";
 
 export function MainRoutes() {
     return (
@@ -20,6 +21,7 @@ export function MainRoutes() {
             <Route path="/whey" element={<Whey/>}/>
             <Route path="/suplementos/cwhey" element={<Cwhey/>}/>
             <Route path="/roupas/croupa" element={<Croupa/>}/>
+            <Route path="/caditens" element={<CADitens/>}/>
         </Routes>
     );
 }
