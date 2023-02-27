@@ -1,6 +1,3 @@
-import Cabecalho from "./components/Global/CABECALHO/Cabecalho";
-import Pesquisa from "./components/Global/PESQUISA/Pesquisa";
-import Conteudo from "./components/Global/CONTEUDO/Conteudo";
 import { BrowserRouter } from "react-router-dom";
 import SwiperCore, { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";

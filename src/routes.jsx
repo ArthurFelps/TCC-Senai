@@ -1,13 +1,14 @@
 import { Routes, Route, Link } from "react-router-dom";
 import App from "./App";
 
-import Suplementos from "./components/Global/Suplementos";
-import Roupas from "./components/Global/Roupas";
-import Marcas from "./components/Global/Marcas";
-import Top12 from "./components/Global/Top12";
+import Suplementos from "./components/Pages/Suplementos/Suplementos";
+import Roupas from "./components/Pages/Roupas/Roupas";
+import Marcas from "./components/Pages/Marcas/Marcas";
+import Top12 from "./components/Pages/Top12/Top12";
 import Whey from "./components/Global/Whey";
-import Cwhey from "./components/Global/Cwhey";
-import Croupa from "./components/Global/Croupa";
+import Cwhey from "./components/Pages/Suplementos/Cwhey";
+import Croupa from "./components/Pages/Roupas/Croupa";
+
 
 export function MainRoutes() {
     return (
@@ -20,6 +21,7 @@ export function MainRoutes() {
             <Route path="/whey" element={<Whey/>}/>
             <Route path="/suplementos/cwhey" element={<Cwhey/>}/>
             <Route path="/roupas/croupa" element={<Croupa/>}/>
+
         </Routes>
     );
 }

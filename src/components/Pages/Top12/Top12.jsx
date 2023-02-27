@@ -1,4 +1,4 @@
-import "./global.css";
+import "../../Global/global.css";
 
 function Top12(){
     return(
