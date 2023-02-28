@@ -1,22 +1,28 @@
-
 import "../PESQUISA/Pesquisa.css";
 
-function Pesquisa(){
-    return(
 
+function Pesquisa() {
 
-        <section className="NAV-pesquisa">
-          <div className="linha">
-          <a href="../produtos/produtos.html">
-          <div className="search-container">
-              <label  className="search-icon"></label>
-              <input type="text" className="search-input" id="search-input" required />
-          </div>
+  return (
+
+    <div className="NAV-pesquisa">
+
+      <div className="search-box">
+
+        <input className="input-text" type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar.." />
+
+        <a className="search-btn" href="./"> 
+
+          <img src="./imagens/loupe-blue.svg" alt="logo-icon" /> 
+
         </a>
-          </div>
-      </section>
-    )
 
+
+      </div>
+
+    </div>
+
+  );
 }
 
 export default Pesquisa;

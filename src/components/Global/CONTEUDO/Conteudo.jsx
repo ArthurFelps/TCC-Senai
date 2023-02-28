@@ -1,101 +1,168 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-import "../CONTEUDO/Conteudo.css"
+import styles from '../../Global/CONTEUDO/Conteudo.module.css';
 
 function Conteudo(){
-    return(
-        <div className="CONTEUDO">
-        
-            <section className="CONTEUDO-PRINCIPAL">
 
-                <div className="CONTEUDO-PRINCIPAL-ESCRITO"> 
-                        
-                    <Link to="suplementos" className="botão">
+	const [sidebar, setSideBar] = useState(false);
+	const showSideBar = () => setSideBar(!sidebar);
 
-                        <button
+return(
 
-                        className="CONTEUDO-BOTÃO" style={{letterSpacing: '3px'}}>
+	<div className={styles["container-father"]}>
+	
+		<div className={styles["container-inner"]}> 
+					
+			<nav className={styles["nav-menu"]}>
 
-                        <div className="container-icone-botão1">
+				<Link to="suplementos" >
 
-                            <img className="icones-botão" src="../../imagens/Suplemento.png" alt="" />
+					<button className={styles["CONTEUDO-BOTÃO"]} >SUPLEMENTOS
+							
+						<div className={styles["container-icone-botao"]}>
 
-                                <strong>SUPLEMENTOS</strong>
+							<img className={styles["icone-botao"]} src="../../imagens/Suplemento.png" alt="suplementos" />
 
-                        </div>
-                                 
-                        </button> 
+						</div>
+									
+					</button> 
 
-                    </Link>
+				</Link>
 
-                    <Link to="roupas" className="botão">
-                        <button
-                            
-                                className="CONTEUDO-BOTÃO" style={{letterSpacing: '3px'}}>
 
-                            <div className="container-icone-botão">
+				<Link to="roupas" >
 
-                                <img className="icones-botão" src="../../imagens/cabide.png" alt="" />
-                                <strong>ROUPAS</strong>
+					<button className={styles["CONTEUDO-BOTÃO"]} >ROUPAS
 
-                            </div>
-                                 
-                        </button> 
+						<div className={styles["container-icone-botao"]}>
 
-                    </Link>
-                
-                    <Link to="marcas">
-                        <button
+							<img className={styles["icone-botao"]} src="../../imagens/cabide.png" alt="roupas" />
+								
+						</div>
+									
+					</button> 
 
-                        className="CONTEUDO-BOTÃO" style={{letterSpacing: '3px'}}>
+				</Link>
 
-                        <div className="container-icone-botão">
 
-                            <img className="icones-botão" src="../../imagens/Peso.png" alt="" />
-                            
-                                <strong>MARCAS</strong>
+				<Link to="marcas">
 
-                        </div>
-                                 
-                        </button> 
-                    </Link>
+					<button className={styles["CONTEUDO-BOTÃO"]} >MARCAS
 
-                    <Link to="top12">
-                        <button
+						<div className={styles["container-icone-botao"]}>
 
-                        className="CONTEUDO-BOTÃO" style={{letterSpacing: '3px'}}>
+							<img className={styles["icone-botao"]} src="../../imagens/Peso.png" alt="marcas" />
 
-                        <div className="container-icone-botão">
+						</div>
+										
+					</button> 
 
-                            <img className="icones-botão" src="../../imagens/fogo.png" alt="" />
-                            
-                                <strong>TOP 12</strong>
+				</Link>
 
-                        </div>
-                                 
-                        </button> 
-                    </Link>
 
-                    <Link to="whey">
-                        <button
+				<Link to="top12">
 
-                        className="CONTEUDO-BOTÃO" style={{letterSpacing: '3px'}}>
+					<button className={styles["CONTEUDO-BOTÃO"]} >TOP12
 
-                        <div className="container-icone-botão2">
+						<div className={styles["container-icone-botao"]}>
 
-                            <img className="icones-botão" src="../../imagens/Whey2.png" alt="" />
-                            
-                                <strong>WHEYS</strong>
+							<img className={styles["icone-botao"]} src="../../imagens/fogo.png" alt="top12" />
+								
+						</div>
+											
+					</button> 
 
-                        </div>
-                                 
-                        </button> 
-                    </Link>  
-                    
-                </div>
-            </section>
-        </div>
-    )
+				</Link>
+
+
+				<Link to="whey">
+
+					<button className={styles["CONTEUDO-BOTÃO"]} >WHEYS
+
+						<div className={styles["container-icone-botao"]}>
+
+							<img className={styles["icone-botao"]} src="../../imagens/Whey2.png" alt="wheys" />
+
+						</div>
+										
+					</button> 
+
+				</Link>  
+
+
+			</nav>
+				
+				
+		</div>
+
+
+
+		<button className={styles["button-mobile"]} >
+
+			<Link to="#">
+
+				<span className="material-symbols-outlined" onClick={showSideBar} >menu</span>
+				<span>Menu</span>
+
+			</Link>
+
+		</button>
+
+		<nav className={styles[sidebar ? 'menu-mobile-active' : 'menu-mobile']}>
+
+			<ul onClick={showSideBar}>
+
+				<Link to="#">
+
+					<button >
+
+						<span className="material-symbols-outlined">close</span>
+
+					</button>
+
+				</Link>
+
+
+				<Link to="suplementos" >
+
+					<button className={styles["CONTEUDO-BOTÃO"]} >SUPLEMENTOS
+							
+						<div className={styles["container-icone-botao"]}>
+
+							<img className={styles["icone-botao"]} src="../../imagens/Suplemento.png" alt="suplementos" />
+
+						</div>
+									
+					</button> 
+
+				</Link>
+
+
+				<Link to="roupas" >
+
+					<button className={styles["CONTEUDO-BOTÃO"]} >ROUPAS
+
+						<div className={styles["container-icone-botao"]}>
+
+							<img className={styles["icone-botao"]} src="../../imagens/cabide.png" alt="roupas" />
+								
+						</div>
+									
+					</button> 
+
+				</Link>
+
+			</ul>
+
+
+
+		</nav>
+
+			
+	</div>
+)
+
 }
 
 export default Conteudo;

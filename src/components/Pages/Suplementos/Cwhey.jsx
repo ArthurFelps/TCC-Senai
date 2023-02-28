@@ -1,4 +1,5 @@
-import "./global.css";
+import "../../Global/global.css";
+
 
 function Cwhey(){
     return(
