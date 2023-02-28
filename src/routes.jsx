@@ -21,7 +21,7 @@ export function MainRoutes() {
             <Route path="/whey" element={<Whey/>}/>
             <Route path="/suplementos/cwhey" element={<Cwhey/>}/>
             <Route path="/roupas/croupa" element={<Croupa/>}/>
-            <Route path="/cadroupas" element={<CADitens/>}/>
+            <Route path="/caditens" element={<CADitens/>}/>
         </Routes>
     );
 }
