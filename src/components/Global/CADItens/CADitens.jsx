@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
-import "./CADitens.css"
+import styles from "./CADitens.module.css";
 
 const schema = yup.object({
     nomeproduto: yup.string().required("esse campo é obrigatorio"),
@@ -33,51 +33,51 @@ function CADitens(){
 
         <main>
             {/* Lugar para cadastar uma foto do produto */}
-                <div className='img'>
-                <input type="file"/>
-                <button>
-                  Upload!
-                </button>
+                <div className={styles["img"]}>
+                    <input type="file" className={styles["input"]}/>
+                        <button className={styles["button"]}>
+                            Upload!
+                        </button>
                 </div>
             {/* Lugar para cadastar informações do produto */}
-                <div className='conteudo'>
-                    <form onSubmit={handleSubmit(cad)} className='formulario'>
-                        <label>
+                <div className={styles["conteudo"]}>
+                    <form onSubmit={handleSubmit(cad)} className={styles["formulario"]}>
+                        <label className={styles["label"]}>
                             Nome produto:
                             <input { ... register("nomeproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                     <br/>
 
-                        <label>
+                        <label className={styles["label"]}>
                             Descrição produto:
                             <input type="text"  {... register("descproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                     <br/>
 
-                        <label>
+                        <label className={styles["label"]}>
                             Tipo Produto:
                             <input type="text"  {... register("tipoproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span> 
                             <br/>
 
-                        <label>
+                        <label className={styles["label"]}>
                             Tamanho Produto:
                             <input type="text"  {... register("tamanhoproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                     <br/>
 
-                        <label>
+                        <label className={styles["label"]}>
                             Preço Produto:
                             <input type="number"  {... register("precoproduto", { required: true })}/>
                         </label>
                         <span>{errors.precoproduto?.message}</span>
                     <br/>
 
-                        <button type='submit'>Cadastrar Item</button>
+                        <button type='submit'  className={styles["button"]}>Cadastrar Item</button>
 
                     </form>
                 </div>

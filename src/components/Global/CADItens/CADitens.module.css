@@ -19,9 +19,10 @@ main{
     border-radius: 15px;
 }
 
+
 .conteudo{
     margin-right: 17.5vw;
-    margin-left 1.5vw;
+    margin-left: 1.5vw;
     height: 50vh;
     width: 30vw;
     background-color: rgb(185, 185, 185);
@@ -40,18 +41,18 @@ main{
     gap: 1.5px;
 }
 
-label{
+.label{
     display: flex;
     flex-direction: column;
 }
 
-input{
+.input{
     border: 1px solid gray;
     height: 20px;
     width: 200px;
 }
 
-button{
+.button{
     height: 25px;
     width: 200px;
     background-color: gray;
@@ -60,7 +61,7 @@ button{
     border-radius: 5px;
 }
 
-button-hover{
+.button-hover{
     height: 25px;
     width: 200px;
     background-color: rgb(161, 161, 161);
@@ -68,7 +69,7 @@ button-hover{
     border-radius: 5px;
 }
 
-span{
+.conteudo .formulario > span{
     color: red;
     position:static;
     margin-top: -7px;
