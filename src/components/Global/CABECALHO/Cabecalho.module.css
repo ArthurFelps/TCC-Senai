@@ -51,5 +51,35 @@
   object-fit: cover;
 }
 
+.div-icone{
+  margin-top: 10px;
+  margin-right: -72%;
+
+}
+
+.ICONE3{
+  height: 45px;
+  padding: 0px;
+  margin-right: -70%;
+  width: 45px;
+  transition: transform 0.2s ease-in-out;
+  object-fit: cover;
+}
+
+.ICONE3:hover {
+  transform: rotate(10deg);
+  animation: balanco 0.4s ease-in-out infinite alternate;
+  }
+@keyframes ICONE3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+}
+}
 
 
