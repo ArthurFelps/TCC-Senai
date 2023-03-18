@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import CardFile from "../CADItens/Cardvendas";
 
 import styles from "./CADitens.module.css";
 
 const schema = yup.object({
-    nomeproduto: yup.string().required("esse campo é obrigatorio"),
-    descrproduto: yup.string().required("esse campo é obrigatorio"),
-    tipoproduto: yup.string().required("esse campo é obrigatorio"),
-    tamanhoproduto: yup.string().required("esse campo é obrigatorio"),
-    precoproduto: yup.number().positive().required("esse campo é obrigatorio"),
+    nomewhey: yup.string().required("esse campo é obrigatorio"),
+    descwhey: yup.string().required("esse campo é obrigatorio"),
+    saborwhey: yup.string().required("esse campo é obrigatorio"),
+    tamanhowhey: yup.string().required("esse campo é obrigatorio"),
+    precowhey: yup.number().positive().required("esse campo é obrigatorio"),
   }).required();
 
-function CADitens(){
+function CADwhey(){
     const { register, handleSubmit, watch, formState: { errors } } = useForm({resolver: yupResolver(schema)});
 
 //pega as informações e envia para o console.log
@@ -26,55 +27,45 @@ function CADitens(){
 
     return(
         <>
-        {/* Lugar para cadastar uma foto do produto */}
-        <header>
-                oi
-        </header>
-
         <main>
             {/* Lugar para cadastar uma foto do produto */}
-                <div className={styles["img"]}>
-                    <input type="file" className={styles["input"]}/>
-                        <button className={styles["button"]}>
-                            Upload!
-                        </button>
-                </div>
+            <CardFile/>
             {/* Lugar para cadastar informações do produto */}
-
                 <div className={styles["conteudo"]}>
+
                     <form onSubmit={handleSubmit(cad)} className={styles["formulario"]}>
                         <label className={styles["label"]}>
-                            Nome produto:
-                            <input { ... register("nomeproduto", { required: true })}/>
+                            Nome Whey:
+                            <input { ... register("nomewhey", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                         
                     <br/>
 
                         <label className={styles["label"]}>
-                            Descrição produto:
-                            <input type="text"  {... register("descproduto", { required: true })}/>
+                            Descrição whey:
+                            <input type="text"  {... register("descwhey", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                     <br/>
 
                         <label className={styles["label"]}>
-                            Tipo Produto:
-                            <input type="text"  {... register("tipoproduto", { required: true })}/>
+                            Sabor Whey:
+                            <input type="text"  {... register("saborwhey", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span> 
                             <br/>
 
                         <label className={styles["label"]}>
-                            Tamanho Produto:
-                            <input type="text"  {... register("tamanhoproduto", { required: true })}/>
+                            Tamanho:
+                            <input type="text"  {... register("tamanhowhey", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                     <br/>
 
                         <label className={styles["label"]}>
-                            Preço Produto:
-                            <input type="number"  {... register("precoproduto", { required: true })}/>
+                            Preço:
+                            <input type="number"  {... register("precowhey", { required: true })}/>
                         </label>
                         <span>{errors.precoproduto?.message}</span>
                     <br/>
@@ -87,6 +78,6 @@ function CADitens(){
         </>
 
     )
-}
 
-export default CADitens;
+
+}export default CADwhey;
