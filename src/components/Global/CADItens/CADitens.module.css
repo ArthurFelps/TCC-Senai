@@ -1,9 +1,5 @@
-header{
-    background-color: brown;
-}
-
 main{
-    background-color: rgb(242, 242, 242);
+    background-color: none;
     flex-direction: table;
     position: relative;
     display: flex;
@@ -69,8 +65,47 @@ main{
     border-radius: 5px;
 }
 
+/* 
 .conteudo .formulario > span{
     color: red;
     position:static;
     margin-top: -7px;
+}
+
+.picture{
+    width: 400px;
+    height: 400px;
+}
+
+.picture__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.formimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #1475cf;
+    height: 50vh;
+    width: 30vw;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img_nameinfo{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: rgb(185, 185, 185);
+}
+
+.img_content{
+    display: flex;
+    align-items: center;
 }

@@ -25,9 +25,9 @@ export function MainRoutes() {
             <Route path="/whey" element={<Whey/>}/>
             <Route path="/suplementos/cwhey" element={<Cwhey/>}/>
             <Route path="/roupas/croupa" element={<Croupa/>}/>
-            <Route path="/caditens" element={<CADitens/>}/>
-            <Route path="/cadwhey" element={<CADwhey/>}/>
-            <Route path="/cadroupa" element={<CADroupa/>}/>
+            <Route path="/telacad/caditens" element={<CADitens/>}/>
+            <Route path="/telacad/cadwhey" element={<CADwhey/>}/>
+            <Route path="/telacad/cadroupa" element={<CADroupa/>}/>
             <Route path="/telacad" element={<Telacad/>}/>
         </Routes>
     );

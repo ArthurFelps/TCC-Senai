@@ -1,3 +1,21 @@
 .conteudo{
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    padding: 30px;
+    padding-left: 30px;
+    margin-top: 200px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    margin: 20px;
+  }
+
+.h2{
+    color: antiquewhite;
+    display: grid;
+    justify-content: center;
 }

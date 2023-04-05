@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import CardFile from "../CADItens/Cardvendas";
 
 import styles from "./CADitens.module.css";
 
@@ -26,19 +27,9 @@ function CADitens(){
 
     return(
         <>
-        {/* Lugar para cadastar uma foto do produto */}
-        <header>
-                oi
-        </header>
-
         <main>
             {/* Lugar para cadastar uma foto do produto */}
-                <div className={styles["img"]}>
-                    <input type="file" className={styles["input"]}/>
-                        <button className={styles["button"]}>
-                            Upload!
-                        </button>
-                </div>
+                <CardFile/>
             {/* Lugar para cadastar informações do produto */}
 
                 <div className={styles["conteudo"]}>
