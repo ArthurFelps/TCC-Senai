@@ -8,14 +8,16 @@ import CardFile from "../CADItens/Cardvendas";
 import styles from "./CADitens.module.css";
 
 const schema = yup.object({
-    nomeroupa: yup.string().required("esse campo é obrigatorio"),
-    descroupa: yup.string().required("esse campo é obrigatorio"),
-    corroupa: yup.string().required("esse campo é obrigatorio"),
-    tamanhoroupa: yup.string().required("esse campo é obrigatorio"),
-    precoroupa: yup.number().positive().required("esse campo é obrigatorio"),
+    nomeproduto: yup.string().required("esse campo é obrigatorio"),
+    descrproduto: yup.string().required("esse campo é obrigatorio"),
+    tipoproduto: yup.string().required("esse campo é obrigatorio"),
+    tamanhoproduto: yup.string().required("esse campo é obrigatorio"),
+    marcaproduto: yup.string().required("esse campo é obrigatorio"),
+    precoproduto: yup.number().positive().required("esse campo é obrigatorio"),
+    quantidadeproduto: yup.number().positive().required("esse campo é obrigatorio"),
   }).required();
 
-function CADroupa(){
+function CADitens(){
     const { register, handleSubmit, watch, formState: { errors } } = useForm({resolver: yupResolver(schema)});
 
 //pega as informações e envia para o console.log
@@ -29,45 +31,57 @@ function CADroupa(){
         <>
         <main>
             {/* Lugar para cadastar uma foto do produto */}
-            <CardFile/>
+                <CardFile/>
             {/* Lugar para cadastar informações do produto */}
 
                 <div className={styles["conteudo"]}>
                     <form onSubmit={handleSubmit(cad)} className={styles["formulario"]}>
                         <label className={styles["label"]}>
-                            Nome Roupa:
-                            <input { ... register("nomeroupa", { required: true })}/>
+                            Nome produto:
+                            <input { ... register("nomeproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                         
                     <br/>
 
                         <label className={styles["label"]}>
-                            Descrição:
-                            <input type="text"  {... register("descroupa", { required: true })}/>
+                            Descrição produto:
+                            <input type="text"  {... register("descproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                     <br/>
 
                         <label className={styles["label"]}>
-                            Cor:
-                            <input type="text"  {... register("corroupa", { required: true })}/>
+                            Tipo Produto:
+                            <input type="text"  {... register("tipoproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span> 
                             <br/>
 
                         <label className={styles["label"]}>
-                            Tamanho:
-                            <input type="text"  {... register("tamanhoroupa", { required: true })}/>
+                            Tamanho Produto:
+                            <input type="text"  {... register("tamanhoproduto", { required: true })}/>
                         </label>
                         <span>{errors.nomeproduto?.message}</span>
                     <br/>
 
                         <label className={styles["label"]}>
-                            Preço:
-                            <input type="number"  {... register("precoroupa", { required: true })}/>
+                            Preço Produto:
+                            <input type="number"  {... register("precoproduto", { required: true })}/>
                         </label>
                         <span>{errors.precoproduto?.message}</span>
+                    <br/>
+                        <label className={styles["label"]}>
+                            Quantidade Produto:
+                            <input type="number"  {... register("precoproduto", { required: true })}/>
+                        </label>
+                        <span>{errors.quantidadeproduto?.message}</span>
+                    <br/>
+                    <label className={styles["label"]}>
+                            Marca Produto:
+                            <input type="text"  {... register("precoproduto", { required: true })}/>
+                        </label>
+                        <span>{errors.marcaproduto?.message}</span>
                     <br/>
 
                         <button type='submit'  className={styles["button"]}>Cadastrar Item</button>
@@ -78,6 +92,6 @@ function CADroupa(){
         </>
 
     )
+}
 
-
-}export default CADroupa;
+export default CADitens;

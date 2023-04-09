@@ -5,7 +5,7 @@ import Suplementos from "./components/Pages/Suplementos/Suplementos";
 import Roupas from "./components/Pages/Roupas/Roupas";
 import Marcas from "./components/Pages/Marcas/Marcas";
 import Top12 from "./components/Pages/Top12/Top12";
-import Whey from "./components/Global/Whey";
+import Whey from "./components/Pages/Whey/Whey";
 import Cwhey from "./components/Pages/Suplementos/Cwhey";
 import Croupa from "./components/Pages/Roupas/Croupa";
 import CADitens from "./components/Global/CADItens/CADitens";

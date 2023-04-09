@@ -25,10 +25,10 @@ export default function CardFile() {
 					}
 				}} />
 				{image ?
-					<img src={image} width={60} height={60} alt={fileName}/>
+					<img src={image} width={400} height={400} alt={fileName}/>
 					:
 			<>
-					<MdCloudUpload color="#1475cf" size={60} />
+					<MdCloudUpload color="#1475cf" size={600} />
 					<p>Browse Files to upload</p>			
 			</>
 				}
