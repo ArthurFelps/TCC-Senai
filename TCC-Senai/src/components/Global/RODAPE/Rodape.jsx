@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import CardFile from "../CADItens/Cardvendas";
 
 import styles from'../RODAPE/rodape.module.css'
 
@@ -56,7 +57,7 @@ function Rodape(){
 
                         <li>Telefone</li>
 
-                        <li>Chat</li>          
+                        <li>Contato</li>          
                     </ul>
 
                 </div>
@@ -83,7 +84,7 @@ function Rodape(){
 
                 <div className={styles["inner"]}>
 
-                    <img className={styles["img-fotter-over"]} src="../../imagens/OVERBODY.png" alt="logo" />
+                    <img className={styles["img-fotter-over"]} src="../../imagens/OVERBODY2.png" alt="logo" />
 
                 </div>
 

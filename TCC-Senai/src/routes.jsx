@@ -5,10 +5,14 @@ import Suplementos from "./components/Pages/Suplementos/Suplementos";
 import Roupas from "./components/Pages/Roupas/Roupas";
 import Marcas from "./components/Pages/Marcas/Marcas";
 import Top12 from "./components/Pages/Top12/Top12";
-import Whey from "./components/Global/Whey";
+import Whey from "./components/Pages/Whey/Whey";
 import Cwhey from "./components/Pages/Suplementos/Cwhey";
 import Croupa from "./components/Pages/Roupas/Croupa";
 import CADitens from "./components/Global/CADItens/CADitens";
+import CADwhey from "./components/Global/CADItens/CADwhey";
+import CADroupa from "./components/Global/CADItens/CADroupas";
+import Telacad from "./components/Global/CADItens/Telacad";
+
 
 export function MainRoutes() {
     return (
@@ -21,7 +25,10 @@ export function MainRoutes() {
             <Route path="/whey" element={<Whey/>}/>
             <Route path="/suplementos/cwhey" element={<Cwhey/>}/>
             <Route path="/roupas/croupa" element={<Croupa/>}/>
-            <Route path="/caditens" element={<CADitens/>}/>
+            <Route path="/telacad/caditens" element={<CADitens/>}/>
+            <Route path="/telacad/cadwhey" element={<CADwhey/>}/>
+            <Route path="/telacad/cadroupa" element={<CADroupa/>}/>
+            <Route path="/telacad" element={<Telacad/>}/>
         </Routes>
     );
 }

@@ -15,6 +15,10 @@ function Cabecalho() {
 
         <nav className={styles["NAV-BAR"]}>
 
+            <Link>
+                <img className={styles['ICONE3']} src="../../imagens/Cart2.png" alt="Logo" />
+            </Link>
+          
           <ExternalLink
               href="src\components\OPEN-IA\index.html"
               className={styles["botão"]}

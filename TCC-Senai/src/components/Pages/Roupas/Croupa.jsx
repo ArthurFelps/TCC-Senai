@@ -1,20 +1,30 @@
 import "../../Global/global.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function Croupa(){
-    return(
-        <div className="corpocompra">        
+
+    useEffect(() => {
+        axios.get("http://localhost:3000/allRoupas")
+          .then(res => allRoupas(res.data))
+          .catch(err => console.log(err))
+      })
+    
+    return(      
+         
+            <div className="corpocompra">        
             <div className="imagemcompra">
                 <img src="../imagens/camisa.webp" className="imgcompra"/>
-            </div>
+                </div>
             <div className="informacaocompra">
                 <div style={{paddingBottom: "50px"}}>
                     <h1>
-                        Camiseta Dray Friso Marinho
+                        {user.nome}
                     </h1>
                 </div>
-                <p> Vendido por Profit Academia Vendido por OVERBODY</p>
+                <p> {user.descricao}</p>
                     <h2 style={{paddingBottom: "60px"}}>
-                        R$34,00
+                        R${user.preco}
                     </h2>
                 <form>
                     <button className="buttoncomp">COMPRAR</button>
@@ -22,8 +32,10 @@ function Croupa(){
                 <form>
                     <button className="buttoncomp">ADICIONAR AO CARRINHO</button>
                 </form>
-            </div>
-    </div>
+                </div>
+                 </div>
+            
+
     )
 }
 

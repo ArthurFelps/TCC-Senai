@@ -1,9 +1,5 @@
-header{
-    background-color: brown;
-}
-
 main{
-    background-color: rgb(242, 242, 242);
+    background-color: none;
     flex-direction: table;
     position: relative;
     display: flex;
@@ -19,10 +15,11 @@ main{
     border-radius: 15px;
 }
 
+
 .conteudo{
     margin-right: 17.5vw;
-    margin-left 1.5vw;
-    height: 50vh;
+    margin-left: 1.5vw;
+    height: 60vh;
     width: 30vw;
     background-color: rgb(185, 185, 185);
     display: flex;
@@ -40,18 +37,18 @@ main{
     gap: 1.5px;
 }
 
-label{
+.label{
     display: flex;
     flex-direction: column;
 }
 
-input{
+.input{
     border: 1px solid gray;
     height: 20px;
     width: 200px;
 }
 
-button{
+.button{
     height: 25px;
     width: 200px;
     background-color: gray;
@@ -60,7 +57,7 @@ button{
     border-radius: 5px;
 }
 
-button-hover{
+.button-hover{
     height: 25px;
     width: 200px;
     background-color: rgb(161, 161, 161);
@@ -68,8 +65,47 @@ button-hover{
     border-radius: 5px;
 }
 
-span{
+/* 
+.conteudo .formulario > span{
     color: red;
     position:static;
     margin-top: -7px;
+}
+
+.picture{
+    width: 400px;
+    height: 400px;
+}
+
+.picture__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.formimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #1475cf;
+    height: 50vh;
+    width: 30vw;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img_nameinfo{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: rgb(185, 185, 185);
+}
+
+.img_content{
+    display: flex;
+    align-items: center;
 }
