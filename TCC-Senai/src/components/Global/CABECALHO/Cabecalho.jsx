@@ -1,5 +1,6 @@
 import { ExternalLink } from "react-external-link";
 import { Link } from "react-router-dom";
+import { RiShoppingCartLine } from 'react-icons/Ri';
 
 import styles from "./Cabecalho.module.css";
 
@@ -15,8 +16,8 @@ function Cabecalho() {
 
         <nav className={styles["NAV-BAR"]}>
 
-            <Link>
-                <img className={styles['ICONE3']} src="../../imagens/Cart2.png" alt="Logo" />
+            <Link to="/carrinho">
+                <RiShoppingCartLine size={40} />
             </Link>
           
           <ExternalLink

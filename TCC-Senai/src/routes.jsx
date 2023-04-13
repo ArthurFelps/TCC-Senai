@@ -1,6 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
 import App from "./App";
-
 import Suplementos from "./components/Pages/Suplementos/Suplementos";
 import Roupas from "./components/Pages/Roupas/Roupas";
 import Marcas from "./components/Pages/Marcas/Marcas";
@@ -12,10 +11,16 @@ import CADitens from "./components/Global/CADItens/CADitens";
 import CADwhey from "./components/Global/CADItens/CADwhey";
 import CADroupa from "./components/Global/CADItens/CADroupas";
 import Telacad from "./components/Global/CADItens/Telacad";
+import { Carrinho } from "./components/Pages/Carrinho/Carrinho";
+import { ShopContextProvider } from "./Context/shop-context";
+
+
+
 
 
 export function MainRoutes() {
     return (
+      <ShopContextProvider>
         <Routes>
             <Route path="/" element={<App />}/>
             <Route path="/suplementos" element={<Suplementos/>}/>
@@ -29,6 +34,8 @@ export function MainRoutes() {
             <Route path="/telacad/cadwhey" element={<CADwhey/>}/>
             <Route path="/telacad/cadroupa" element={<CADroupa/>}/>
             <Route path="/telacad" element={<Telacad/>}/>
+            <Route path="/carrinho" element={<Carrinho/>}/>
         </Routes>
+      </ShopContextProvider>  
     );
 }

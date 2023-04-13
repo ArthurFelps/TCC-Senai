@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CardSuplements from "../../Global/CARDSUPLEMENTOS/CardSuplements";
 import styles from "../../Global/CARDSUPLEMENTOS/card.module.css";
+import { PRODUCTS } from "../../../products";
 
 
 function Top12(){
@@ -35,7 +36,9 @@ function Top12(){
 
         <div className={styles['produtos']}>
 
-           <CardSuplements img="./imagens/whey.png" text="100% Whey Protein (900g) Max Titanium" link='Cwhey' />
+          {PRODUCTS.map(cardSuplement => (
+
+            <CardSuplements data={cardSuplement} key={cardSuplement.id} />))}
 
         </div>
 

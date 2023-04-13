@@ -48,7 +48,7 @@ function Whey(){
 
          <div className={styles['produtos']}>
 
-            <CardSuplements img="./imagens/whey.png" text="100% Whey Protein (900g) Max Titanium" link='Cwhey' />
+            <CardSuplements  />
 
          </div>
 

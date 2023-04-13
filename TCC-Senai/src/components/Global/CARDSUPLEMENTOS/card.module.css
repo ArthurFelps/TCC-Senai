@@ -60,7 +60,7 @@
   .produto {
 
     width: 200px;
-    height: 200px;
+    height: 240px;
     padding: 10px;
     text-align: center;
 
@@ -90,10 +90,10 @@
 
   .botaocompra {
 
-    width: 100px;
-    height: 30px;
+    height: 40px;
+    padding: 6px;
   
-    margin-top: 5px;
+    margin-top: 10px;
   
     background-color: #01282e;
     color: antiquewhite;
