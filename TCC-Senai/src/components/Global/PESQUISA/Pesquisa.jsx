@@ -4,7 +4,7 @@ import "../PESQUISA/Pesquisa.css";
 function Pesquisa() {
 
   return (
-
+    // nave de pesquisa
     <div className="NAV-pesquisa">
 
       <div className="search-box">

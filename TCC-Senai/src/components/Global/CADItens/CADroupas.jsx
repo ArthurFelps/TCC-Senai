@@ -63,7 +63,7 @@ function CADroupa(){
         <>
         <main>
             {/* Lugar para cadastar uma foto do produto */}
-            <CardFile/>
+            <CardFile />
             {/* Lugar para cadastar informações do produto */}
 
                 <div className={styles["conteudo"]}>

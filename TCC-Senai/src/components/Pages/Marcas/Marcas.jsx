@@ -3,6 +3,7 @@ import "../../Global/global.css";
 function Marcas(){
     return(   
         <div className="flex">
+            {/* mostra as principais marcas do nosso site */}
             <img src="./imagens/integralmedica.png" alt="" className="imagem"/>
             <img src="./imagens/growth.png" alt="" className="imagem"/>
             <img src="./imagens/max.png" alt="" className="imagem"/>

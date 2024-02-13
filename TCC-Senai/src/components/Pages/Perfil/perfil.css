@@ -1,0 +1,79 @@
+.conteudo{
+    margin: 10px 20vw 10px 20vw;
+    height: 700px;
+    width: 60vw;
+}
+
+.info {
+    width: 100%;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem{
+    width: 200px;
+    height: 200px;
+}
+
+.foto{
+    width: 30%;
+    margin: 10px;
+}
+
+.informacoes{
+    width: 70%;
+    margin: 10px;
+    background-color: rgb(144, 143, 143);
+    padding-left: 200px;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.label{
+    margin: 10px;
+}
+
+.cards{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card{
+    background-color: rgb(144, 143, 143);
+    width: 295px;
+    height: 90px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    position:static;
+}
+
+.img{
+    margin: 5px;
+}
+
+.botaovenda{
+    width: 100%;
+    margin-top: 200px;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.botaovenda:hover{
+    width: 100%;
+    margin-top: 200px;
+    background-color: rgb(137, 137, 137);
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -20,7 +20,7 @@ function Roupas() {
     <div className={styles["fatherContainer"]}>
 
       <div className={styles["tipos"]}>
-
+      {/* filtro de produtos */}
         <ul>
           <li> <a href="./">MASCULINO</a> </li>
           
@@ -32,6 +32,7 @@ function Roupas() {
 
       <div className={styles["produtos"]}>
         {allRoupas.map((roupa) => (
+          // produtos
           <CardSuplements img={roupa.imagem} text={roupa.nome_produto} link="Croupa" />
         ))}
 

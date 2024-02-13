@@ -7,7 +7,7 @@ import styles from'../RODAPE/rodape.module.css'
 function Rodape(){
     
     return(
-
+        // Rodape do nosso site
         <div className={styles['container-father']}>
 
             <div className={styles['container-inner']}>
@@ -70,7 +70,7 @@ function Rodape(){
                         <h2>Sobre nós</h2>
 
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis eius alias natus iure odio blanditiis error voluptas eos et numquam, laudantium cupiditate corporis illum rerum? Est quisquam animi porro deleniti!
+                            A Overbody é uma empresa que veio ajudar na hora da compra de seus produtos fit, democratizar os preços e dar a oportunidade de academias e marcas venderem em um site que vende somente para o nicho fit. 
                         </p>
 
                     </ul>
@@ -82,6 +82,8 @@ function Rodape(){
 
             <div className={styles["fotter"]}>
 
+                {/* logo da empresa */}
+
                 <div className={styles["inner"]}>
 
                     <img className={styles["img-fotter-over"]} src="../../imagens/OVERBODY2.png" alt="logo" />
@@ -91,6 +93,8 @@ function Rodape(){
 
 
                 <div className={styles["social"]}>
+
+                    {/* logos de redes sociais */}
 
                     <ul>
 

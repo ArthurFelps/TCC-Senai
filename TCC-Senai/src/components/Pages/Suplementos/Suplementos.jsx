@@ -10,6 +10,8 @@ function Suplements(){
 
          <div className={styles['tipos']}>
 
+            {/* filtros de busca */}
+
                <ul>
 
                   <li>
@@ -53,8 +55,8 @@ function Suplements(){
          </div>
 
          <div className={styles['produtos']}>
-
-            <CardSuplements img="./imagens/whey.png" text="100% Whey Protein (900g) Max Titanium" link='Cwhey' />
+            {/* demonstração de produto */}
+            <CardSuplements img="./imagens/Suplemento.png" text="CREATINA (250g) Max Titanium" link='Cwhey' />
 
          </div>
 

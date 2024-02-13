@@ -3,9 +3,10 @@ import "../../Global/global.css";
 
 function Cwhey(){
     return(
+    // card produto
         <div className="corpocompra">        
             <div className="imagemcompra">
-                <img src="./imagens/whey.png" className="imgcompra"/>
+                <img src=".././imagens/Suplemento.png" className="imgcompra"/>
             </div>
             <div className="informacaocompra">
                 <div style={{paddingBottom: "50px"}}>

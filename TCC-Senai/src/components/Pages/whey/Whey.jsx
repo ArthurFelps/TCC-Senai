@@ -9,7 +9,7 @@ function Whey(){
       <div className={styles['fatherContainer']}>
 
          <div className={styles['tipos']}>
-
+               {/* filtro produtos */}
                <ul>
 
                   <li>
@@ -47,7 +47,7 @@ function Whey(){
          </div>
 
          <div className={styles['produtos']}>
-
+            {/* demonstração de itens */}
             <CardSuplements img="./imagens/whey.png" text="100% Whey Protein (900g) Max Titanium" link='Cwhey' />
 
          </div>

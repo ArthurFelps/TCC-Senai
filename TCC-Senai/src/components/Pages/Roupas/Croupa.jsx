@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Croupa(){
-
+    // endereço http do banco
     useEffect(() => {
         axios.get("http://localhost:3000/allRoupas")
           .then(res => allRoupas(res.data))
@@ -11,7 +11,7 @@ function Croupa(){
       })
     
     return(      
-         
+            // informações do produto
             <div className="corpocompra">        
             <div className="imagemcompra">
                 <img src="../imagens/camisa.webp" className="imgcompra"/>
