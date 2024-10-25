@@ -1,10 +1,25 @@
-import "./carteira.css";
+import carstyle from'../Carteira/carteira.module.css';
+import CardCartao from "../../../Global/CARDCARTAO/CardCartao";
 
 function Carteira() {
     return(
-        <>
-        <h1>Ola mundo</h1>
-        </>
+<>
+        <div className={carstyle.conteudo}>
+            <h2>Cartões</h2>
+            <button className={carstyle.botao}>  </button>
+
+            <div className={carstyle.cartoes}> 
+            <CardCartao/>
+            <CardCartao/>
+            <CardCartao/>
+
+            
+            </div>
+        </div>  
+
+</>
+
+        
     );
     
 };

@@ -1,0 +1,18 @@
+.cartao{
+
+    width: 49.5%;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+
+    color: aliceblue;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.507);
+    background-color: #01424e;
+    border-radius: 5px;
+    
+}
+
+.infocartoes{
+    display: flex;
+    flex-direction: column;
+}

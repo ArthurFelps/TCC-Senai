@@ -1,56 +1,56 @@
-import "./perfil.css"
+import style from "./perfil.module.css"
 import { Link } from "react-router-dom";
 
 function Perfil() {
     return(
         <>
-        <div className="conteudo">
-            <div className="info">
-                <div className="foto"> <img src="./imagens/user.png" alt="foto"  className="imagem"/></div>
-                <div className="informacoes">
+        <div className={style.conteudo}>
+            <div className={style.info}>
+                <div className={style.foto}> <img src="../../../../imagens/user.png" alt="foto"  className={style.imagem}/></div>
+                <div className={style.informacoes}>
                     {/* mostra as informações do Usuario */}
                     <br/>
-                    <label className="label">Email:</label>
+                    <label className={style.label}>Email:</label>
                     <br/>
-                    <label className="label">overbody123@gmail.com</label>
+                    <label className={style.label}>overbody123@gmail.com</label>
                     <br/>
-                    <label className="label">Nome:</label>
+                    <label className={style.label}>Nome:</label>
                     <br/>
-                    <label className="label">Arthur Figueiredo Facure Gomes</label>
+                    <label className={style.label}>Arthur Figueiredo Facure Gomes</label>
                     <br/>
-                    <label className="label">CPF;</label>
+                    <label className={style.label}>CPF;</label>
                     <br/>
-                    <label className="label">123.456.789-10</label>
+                    <label className={style.label}>123.456.789-10</label>
                     <br/>
-                    <label className="label">Nome Usuario:</label>
+                    <label className={style.label}>Nome Usuario:</label>
                     <br/>
-                    <label className="label">overbody1</label>
+                    <label className={style.label}>overbody1</label>
                 </div>
             </div>
-            <div className="cards">
+            <div className={style.cards}>
                 <Link to="/perfil/Carteira">
-                <div className="card">
-                    <div className="img"><img src="./imagens/sacolas-de-compras.png" alt="foto"/></div>
+                <div className={style.card}>
+                    <div className={style.img}><img src="../../../../imagens/sacolas-de-compras.png" alt="foto"/></div>
                     <h3>Minhas Compras</h3>
                 </div>
                 </Link>
                 <Link to="/perfil/Carteira">
-                    <div className="card">
-                        <div className="img"><img src="./imagens/dados.png" alt="foto"/></div>
+                    <div className={style.card}>
+                        <div className="img"><img src="../../../../imagens/dados.png" alt="foto"/></div>
                         <h3>Dados do Usuario</h3>
                     </div>
                 </Link>
                 
                 <Link to="/perfil/Carteira">
-                <div className="card">
-                    <div className="img"><img src="./imagens/carteira.png" alt="foto"/></div>
+                <div className={style.card}>
+                    <div className="img"><img src="../../../../imagens/carteira.png" alt="foto"/></div>
                     <h3>Carteira</h3>
                 </div>
                 </Link>
                 
             </div>
             <Link to="/telacad">
-                <button className="botaovenda">VENDER</button>
+                <button className={style.botaovenda}>VENDER</button>
             </Link>
         </div>
         </>
